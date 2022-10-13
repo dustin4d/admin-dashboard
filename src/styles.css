@@ -1,0 +1,34 @@
+:root {
+    --dash-bg: #1992d4;
+    --background: #e2e8f0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+
+    border: 1px solid red;
+    height: 100vh;
+}
+
+.container div {
+}
+
+.dashboard {
+    grid-area: 1 / 1 / 6 / 2;
+    background-color: var(--dash-bg);
+}
+
+.header {
+    grid-column-start: 2;
+    grid-column-end: 6;
+
+    background-color: #FFF;
+}
+
+.panel {
+    display: grid;
+    grid-area: 2 / 2 / 6 / 6;
+    background-color: var(--background);
+}
