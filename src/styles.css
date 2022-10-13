@@ -1,25 +1,69 @@
+@font-face {
+    font-family: Philosopher-Regular;
+    src: url(/src/fonts/Philosopher-Regular.ttf);
+}
+
+@font-face {
+    font-family: Philosopher-Italic;
+    src: url(/src/fonts/Philosopher-Italic.ttf);
+}
+
 :root {
     --dash-bg: #1992d4;
     --background: #e2e8f0;
+    box-sizing: border-box;
 }
 
+/* --- MAIN CONTAINER --- */
 .container {
     display: grid;
     grid-template-columns: 250px repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
 
-    border: 1px solid red;
     height: 100vh;
 }
 
 .container div {
 }
 
+/* --- DASHBOARD SECTION --- */
 .dashboard {
     grid-area: 1 / 1 / 6 / 2;
     background-color: var(--dash-bg);
 }
 
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    font-family: Philosopher-Regular;
+    color: #F8C8DC;
+}
+
+.logo img {
+    padding-right: 4px;
+    width: 30px;
+    filter: invert(82%) sepia(64%) saturate(253%) hue-rotate(288deg) brightness(96%) contrast(103%);
+}
+
+.logo h1, h2, p{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.logo h2 {
+    align-self: flex-start;
+    font-family: Philosopher-Italic;
+}
+
+.logo p {
+    font-size: 13px;
+    font-family: Philosopher-Italic;
+}
+
+/* --- HEADER --- */
 .header {
     grid-column-start: 2;
     grid-column-end: 6;
