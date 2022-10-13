@@ -63,6 +63,29 @@
     font-family: Philosopher-Italic;
 }
 
+.nav {
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 0;
+
+    list-style-type: none;
+    font-family: Tahoma;
+}
+
+.nav img {
+    height: 1.5em;
+    padding-right: 1em;
+}
+
+.nav-item {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    height: 2em;
+}
+
 /* --- HEADER --- */
 .header {
     grid-column-start: 2;
