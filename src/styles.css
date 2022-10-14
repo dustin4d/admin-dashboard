@@ -14,6 +14,10 @@
     box-sizing: border-box;
 }
 
+body {
+    margin: 0;
+}
+
 /* --- MAIN CONTAINER --- */
 .container {
     display: grid;
@@ -88,12 +92,36 @@
 
 /* --- HEADER --- */
 .header {
+    display: grid;
     grid-column-start: 2;
     grid-column-end: 6;
+    grid-template-columns: 70% 1fr;
+    grid-template-rows: 30% 1fr;
 
     background-color: #FFF;
 }
 
+input {
+    background-color: var(--background);
+    
+}
+
+.searchbar {
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchbar input {
+    width: 70%;
+    margin-left: 1em;
+    border-radius: 30px;
+    border-style: none;
+    border: 1px solid black;
+}
+
+/* --- PANEL --- */
 .panel {
     display: grid;
     grid-area: 2 / 2 / 6 / 6;
