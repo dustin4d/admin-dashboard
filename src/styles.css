@@ -107,7 +107,6 @@ input {
 }
 
 .searchbar {
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -119,6 +118,26 @@ input {
     border-radius: 30px;
     border-style: none;
     border: 1px solid black;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 20px;
+    margin-right: 20px;
+
+    font-family: Philosopher-Regular;
+}
+
+.user img {
+    border-radius: 50%;
+    width: 40px;
+}
+
+.usr img[src="/src/svg"] {
+    width: 10px;
 }
 
 /* --- PANEL --- */
