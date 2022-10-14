@@ -106,6 +106,7 @@ input {
     
 }
 
+/* Searchbar, grid item 1 */
 .searchbar {
     display: flex;
     align-items: center;
@@ -120,6 +121,7 @@ input {
     border: 1px solid black;
 }
 
+/* User, grid item 2 */
 .user {
     display: flex;
     flex-direction: row;
@@ -138,6 +140,16 @@ input {
 
 .usr img[src="/src/svg"] {
     width: 10px;
+}
+
+/* Greeting, grid item 3 */
+.greeting {
+    display: flex;
+}
+
+.greeting img {
+    width: 15%;
+    border-radius: 50%;
 }
 
 /* --- PANEL --- */
