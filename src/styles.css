@@ -9,9 +9,19 @@
 }
 
 :root {
-    --dash-bg: #1992d4;
-    --background: #e2e8f0;
+    /* PCSX2 Colors */
+    --background: #16161a;
+    --white: #fffffe;
+    --grey: #b3c2d7;
+    --dark-grey: #242629;
+    --orange: #f9a11b;
+    --purple: #45317f;
+    --blue: #1b74f9;
+
     box-sizing: border-box;
+
+    /* Default text color change, so it's visible. */
+    color: var(--grey);
 }
 
 body {
@@ -27,23 +37,26 @@ body {
     height: 100vh;
 }
 
-.container div {
-}
 
 /* --- DASHBOARD SECTION --- */
 .dashboard {
     grid-area: 1 / 1 / 6 / 2;
-    background-color: var(--dash-bg);
+    background-color: #225095;
 }
 
 .logo {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 15px;
     font-family: Philosopher-Regular;
-    color: #F8C8DC;
+    color: var(--orange);
+}
+
+.title {
+    display: flex;
 }
 
 .logo img {
@@ -83,7 +96,6 @@ body {
 }
 
 .nav-item {
-    border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -98,11 +110,11 @@ body {
     grid-template-columns: 70% 1fr;
     grid-template-rows: 30% 1fr;
 
-    background-color: #FFF;
+    background-color: var(--background);
 }
 
 input {
-    background-color: var(--background);
+    background-color: var(--dark-grey);
     
 }
 
@@ -113,12 +125,16 @@ input {
     justify-content: center;
 }
 
+.searchbar img {
+    filter: invert(81%) sepia(37%) saturate(5080%) hue-rotate(347deg) brightness(101%) contrast(95%);
+}
+
 .searchbar input {
     width: 70%;
     margin-left: 1em;
     border-radius: 30px;
     border-style: none;
-    border: 1px solid black;
+    border: 1px solid var(--grey);
 }
 
 /* User, grid item 2 */
@@ -145,16 +161,17 @@ input {
 /* Greeting, grid item 3 */
 .greeting {
     display: flex;
+    justify-content: center;
 }
 
 .greeting img {
-    width: 15%;
-    border-radius: 50%;
+    width: 500px;
+    height: auto;
 }
 
 /* --- PANEL --- */
 .panel {
     display: grid;
     grid-area: 2 / 2 / 6 / 6;
-    background-color: var(--background);
+    background-color: var(--dark-grey);
 }
