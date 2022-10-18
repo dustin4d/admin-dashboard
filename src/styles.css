@@ -50,6 +50,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+
     margin-top: 15px;
     font-family: Philosopher-Regular;
     color: var(--orange);
@@ -107,22 +108,31 @@ body {
     display: grid;
     grid-column-start: 2;
     grid-column-end: 6;
-    grid-template-columns: 70% 1fr;
+    grid-template-columns: 50% 1fr;
     grid-template-rows: 30% 1fr;
+
+    padding: 0 20px;
 
     background-color: var(--background);
 }
 
 input {
     background-color: var(--dark-grey);
-    
+}
+
+.header h1 {
+    margin: 0;
+}
+
+.header h2 {
+    font-family: Philosopher-Italic;
 }
 
 /* Searchbar, grid item 1 */
 .searchbar {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
 }
 
 .searchbar img {
@@ -152,6 +162,7 @@ input {
 .user img {
     border-radius: 50%;
     width: 40px;
+    height: 40px;
 }
 
 .usr img[src="/src/svg"] {
@@ -161,12 +172,41 @@ input {
 /* Greeting, grid item 3 */
 .greeting {
     display: flex;
-    justify-content: center;
+    justify-content: left;
+    align-items: center;
+
+    font-family: Philosopher-Regular;
 }
 
-.greeting img {
-    width: 500px;
-    height: auto;
+.greeting #avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#jm_logo {
+    margin-left: auto;
+    width: 30%;
+    padding-right: 20px;
+}
+
+/* Buttons, grid item 4 */
+.buttons {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons button {
+    width: 100px;
+    height: 50px;
+
+    border: 1px solid var(--grey);
+    border-radius: 40px;
+    background-color: var(--blue);
+    color: var(--white)
 }
 
 /* --- PANEL --- */
