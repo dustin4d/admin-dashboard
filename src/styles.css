@@ -100,6 +100,8 @@ body {
     display: flex;
     flex-direction: row;
     align-content: center;
+    justify-content: left;
+    padding-left: 20px;
     height: 2em;
 }
 
@@ -213,5 +215,30 @@ input {
 .panel {
     display: grid;
     grid-area: 2 / 2 / 6 / 6;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 70px repeat(3, 1fr);
     background-color: var(--dark-grey);
+}
+
+.panel-title {
+    display: flex;
+    align-items: flex-end;
+    padding-left: 20px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+    font-family: Philosopher-Regular;
+}
+
+.panel-item {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 20px;
+    padding: 10px 10px;
+
+    font-size: 1.5em;
+    font-family: Tahoma;
+    color: var(--dark-grey);
+    background-color: var(--white);
+    border: 1px solid var(--blue);
 }
